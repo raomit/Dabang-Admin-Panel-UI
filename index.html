@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shaligram Infotech | Task 4</title>
+
+    <!-- Bootstrap Css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Custome css -->
+    <link rel="stylesheet" href="assets/css/stylesheet.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- <script src="assets/bootstrap/js/bootstrap.min.js"></script> -->
+
+    
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="main-column-wrapper row g-0">
+            <div class="sidebar-nav bg-white py-2 py-lg-4">
+                <nav class="mr-0 d-flex flex-column">
+                    <a href="#" class="navbar-brand d-flex align-items-center mt-1 me-0"><img src="assets/images/Dabang Logo Purple.png" class="purple-logo" alt="Dabang Logo Purple">
+                        
+                        <span class="ps-3 dabang-logo-text expand-item">Dabang</span>
+                    
+                    </a>
+                    <ul class="navbar-nav mt-3">
+                        <li class="nav-item text-white active my-3 mt-2 border-radius">
+                            <a href="#" class="nav-link text-white px-1 px-lg-3 d-flex align-items-center">
+                                <i class="fa-solid fa-chart-pie" class="icon-nav" data-bs-toggle="tooltip" title="Dashboard!"></i>
+                                <span class="dashboard expand-item ps-3">Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="nav-item my-1">
+                            <a href="#" class="nav-link px-1 px-lg-3 d-flex align-items-center">
+                                <img src="assets/images/Licon.png" alt="dashboard" class="icon-nav" data-bs-toggle="tooltip" title="Leaderboard!">
+                                <span class="dashboard d-none d-lg-block expand-item ps-3">Leaderboard</span>
+                            </a>
+                        </li>
+                        <li class="nav-item my-1">
+                            <a href="#" class="nav-link px-1 px-lg-3 d-flex align-items-center">
+                                <img src="assets/images/oicon.png" alt="dashboard" class="icon-nav" data-bs-toggle="tooltip" title="Order!">
+                                <span class="dashboard d-none d-lg-block expand-item ps-3">Order</span>
+                            </a>
+                        </li>
+                        <li class="nav-item my-1">
+                            <a href="#" class="nav-link px-1 px-lg-3 d-flex align-items-center">
+                                <img src="assets/images/picon.png" alt="dashboard" class="icon-nav" data-bs-toggle="tooltip" title="Products!">
+                                <span class="dashboard d-none d-lg-block expand-item ps-3">Products</span>
+                            </a>
+                        </li>
+                        <li class="nav-item my-1">
+                            <a href="#" class="nav-link px-1 px-lg-3 d-flex align-items-center">
+                                <img src="assets/images/sicon.png" alt="dashboard" class="icon-nav" data-bs-toggle="tooltip" title="Sales Report!">
+                                <span class="dashboard d-none d-lg-block expand-item ps-3">Sales Report</span>
+                            </a>
+                        </li>
+                        <li class="nav-item my-1">
+                            <a href="#" class="nav-link px-1 px-lg-3 d-flex align-items-center">
+                                <img src="assets/images/micon.png" alt="dashboard" class="icon-nav" data-bs-toggle="tooltip" title="Messages!">
+                                <span class="dashboard d-none d-lg-block expand-item ps-3">Messages</span>
+                            </a>
+                        </li>
+                        <li class="nav-item my-1">
+                            <a href="#" class="nav-link px-1 px-lg-3 d-flex align-items-center">
+                                <img src="assets/images/settingsicon.png" alt="dashboard" class="icon-nav" data-bs-toggle="tooltip" title="Settings!">
+                                <span class="dashboard d-none d-lg-block expand-item ps-3">Settings</span>
+                            </a>
+                        </li>
+                        <li class="nav-item my-1">
+                            <a href="#" class="nav-link px-1 px-lg-3 d-flex align-items-center">
+                                <img src="assets/images/signouticon.png" alt="dashboard" class="icon-nav" data-bs-toggle="tooltip" title="Sign out!">
+                                <span class="dashboard d-none d-lg-block expand-item ps-3">Sign Out</span>
+                            </a>
+                        </li>
+                        <li class="nav-item my-5 expand-item">
+                            <div class="card card-ad border-radius text-white py-2">
+                                <div class="card-body px-5">
+                                    <img class="mb-1" src="assets/images/Dabang Logo White.png" alt="Dabang Logo White">
+                                    <h5 class="card-title mb-2">Dabang Pro</h5>
+                                    <p class="card-text mb-4">Get access to all features on tetumbas</p>
+                                    <a href="#" class="card-link">
+                                        <button class="btn btn-light px-3 py-1 rounded-3">Get Pro</button>
+                                    </a>
+                                </div>
+                                <img src="assets/images/bgballsicon.png" alt="bg balls image" class="absolute-balls-bg-1">
+                                <img src="assets/images/bgballsicon.png" alt="bg balls image" class="absolute-balls-bg-2">
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- Right Column Content Start -->
+            <div class="right-column-content col">
+                <div class="row g-0 align-items-center justify-content-between right-nav-container bg-white py-2 px-2 px-md-4 py-lg-3">
+                    <!-- Hamburger Area Start -->
+                    <div class="col-1">
+                        <a href="#" class="nav-link toggler p-0 ps-1 me-2" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                            <i class="fa-solid fa-bars text-dark" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <!-- Hamburger Area End -->
+
+                    <!-- Horizontal Navigation Area Start -->
+                    <div class="col-11 col-md-9 col-lg-5 d-flex align-items-center">
+                        <!-- Search Input Area -->
+                        <div class="input-group rounded me-lg-3 ">
+                            <span class="input-group-text p-1 ps-2 ps-lg-3 py-lg-2" id="basic-addon1">
+                                <img src="assets/images/searchicon.png" alt="Search Icon" class="search">
+                            </span>
+                            <input type="text" class="form-control ps-0 py-lg-2" placeholder="Search here..." aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+
+                        <!-- Notification Bell -->
+                        <div class="notification-icon me-lg-3">
+                            <img src="assets/images/notifyicon.png" class="notify" alt="Notification Bell">
+                        </div>
+
+                        <!-- Admin Avatar Area Start -->
+                        <div class="admin-area d-flex align-items-center">
+                            <img src="assets/images/profile pic.png" alt="Profile Pic" class="profile me-2">
+                            <div class="drop-down d-flex align-items-start justify-content-between flex-grow-1">
+                                <div class="left">
+                                    <h5 class="musfiq m-0">musfiq</h5>
+                                    <h5 class="admin m-0">Admin</h5>
+                                </div>
+                                <div class="right dropdown">
+                                    <i class="fa-solid fa-chevron-down dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"></i>
+
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                                        <li><a class="dropdown-item" href="#">My Account</a></li>
+                                        <li><a class="dropdown-item" href="#">Logout</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Admin Avatar Area End -->
+                    </div>
+                </div>
+                <!-- Horizontal Navigation Area End -->
+
+                <!-- Main Section 1 Cards Wrapper Start -->
+                <div class="main-section1-wrapper py-3 px-3">
+                    <!-- Main Cards Section 1 Row Start -->
+                    <div class="row section-1 px-3 gy-3">
+                        <!-- Sales Wrapper Start -->
+                        <div class="col-12 col-lg-7">
+                            <div class="inner-sales sales-wrapper bg-white py-3 px-4 rounded-full">
+                                <div class="sales-headline-wrapper d-flex justify-content-between align-items-center mt-2">
+                                    <div class="sheadline">
+                                        <h3 class="todaysales cards-head">Today's Sales</h3>
+                                        <h4 class="summary">Sales Summery</h4>
+                                    </div>
+                                    <button class="rounded bg-white rounded px-3 py-2 btn-export">
+                                        <img src="assets/images/exportbtnicon.png" alt="Export">
+                                        Export
+                                    </button>
+                                </div>
+    
+                                <!-- Sales Cards Colored Start -->
+                                <div class="row sales-cards gx-2 mt-3 ms-0 me-0 mt-lg-4">
+                                        <!-- Sales Card 1 -->
+                                        <div class="card card-1 mb-2 col-12 col-md-6 col-lg-3">
+                                            <div class="card-body rounded-full">
+                                              <img src="assets/images/cardicon1.png" alt="cardsicon1" class="card-title">
+                                              <h6 class="card-subtitle mb-2 my-2 text-muted">$1K</h6>
+                                              <h5 class="card-text">Total Sales</h5>
+                                              <p class="compare-text text-primary my-1">+8% from yesterday</p>
+                                            </div>
+                                        </div>
+                                        <!-- Sales Card 2 -->
+                                        <div class="card card-2 mb-2 col-12 col-md-6 col-lg-3">
+                                            <div class="card-body rounded-full">
+                                              <img src="assets/images/cardicon1.png" alt="cardsicon1" class="card-title">
+                                              <h6 class="card-subtitle mb-2 my-2 text-muted">300</h6>
+                                              <h5 class="card-text">Total Order</h5>
+                                              <p class="compare-text text-primary my-1">+5% from yesterday</p>
+                                            </div>
+                                        </div>
+                                        <!-- Sales Card 3 -->
+                                        <div class="card card-3 mb-2 col-12 col-md-6 col-lg-3">
+                                            <div class="card-body rounded-full">
+                                              <img src="assets/images/cardicon1.png" alt="cardsicon1" class="card-title">
+                                              <h6 class="card-subtitle mb-2 my-2 text-muted">5</h6>
+                                              <h5 class="card-text">Product Sold</h5>
+                                              <p class="compare-text text-primary my-1">+1.2% from yesterday</p>
+                                            </div>
+                                        </div>
+                                        <!-- Sales Card 4 -->
+                                        <div class="card card-4 mb-2 col-12 col-md-6 col-lg-3">
+                                            <div class="card-body rounded-full">
+                                              <img src="assets/images/cardicon1.png" alt="cardsicon1" class="card-title">
+                                              <h6 class="card-subtitle mb-2 my-2 text-muted">8</h6>
+                                              <h5 class="card-text">New Customers</h5>
+                                              <p class="compare-text text-primary my-1">0.5% from yesterday</p>
+                                            </div>
+                                        </div>
+                                </div>
+                                <!-- Sales Cards Colored End -->
+                            </div>
+                            
+                        </div>
+                        <!-- Sales Wrapper End -->
+                        <!-- Insights Main Wrapper Start -->
+                        <div class="col-12 col-lg-5 insights-wrapper bg-white rounded-full px-4 py-3">
+                            <h3 class="insights cards-head mt-2 mb-3">Visitor Insights</h3>
+                            <!-- Accrodion Start -->
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button text-white collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseone" aria-expanded="false" aria-controls="collapseone">
+                                      Lorem Ipsum
+                                    </button>
+                                  </h2>
+                                  <div id="collapseone" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in 
+                                        a piece of classical Latin literature from 45 BC, making it over 2000 years old. 
+                                        Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, 
+                                        looked up one of the more obscure Latin words, consectetu
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                      <button class="accordion-button text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                        Lorem Ipsum
+                                      </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse show collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                      <div class="accordion-body">
+                                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in 
+                                        a piece of classical Latin literature from 45 BC, making it over 2000 years old. 
+                                        Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, 
+                                        looked up one of the more obscure Latin words, consectetu
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+                            <!-- Accrodion End -->
+                        </div>
+                        <!-- Insights Main Wrapper End -->
+                    </div>
+                    <!-- Main Cards Section 1 Row End -->
+                </div>
+                <!-- Section 1 end -->
+
+                <!-- Section 2 Start -->
+                <div class="main-section2-wrapper py-3 px-3">
+                    <div class="row section-2 px-3 gy-3 gx-2 gx-lg-4">
+                        <div class="col-12 col-lg-5 visitorlist-wrapper">
+                            <div class="inner-visitorlist bg-white rounded-full py-3 px-4">
+                                <h3 class="insights cards-head mt-2">Visitor List</h3>
+                                <!-- Visitor List Table Start -->
+                                <div class="table-responsive">
+                                    <table class="table table-hover">
+                                        <thead>
+                                          <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">Name</th>
+                                            <th scope="col">Join Date</th>
+                                            <th scope="col">Actions</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <th scope="row">01</th>
+                                            <td>Stephen P. Osborn</td>
+                                            <td>17 Jan, 2023</td>
+                                            <td>
+                                                <img src="assets/images/uptable.png" alt="uptable">
+                                                <img src="assets/images/deltable.png" alt="uptable">
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">02</th>
+                                            <td>Odessa G. Mettler</td>
+                                            <td>13 Feb, 2023</td>
+                                            <td>
+                                                <img src="assets/images/uptable.png" alt="uptable">
+                                                <img src="assets/images/deltable.png" alt="uptable">
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">03</th>
+                                            <td>Judith H. Richards</td>
+                                            <td>13 Feb, 2023</td>
+                                            <td>
+                                                <img src="assets/images/uptable.png" alt="uptable">
+                                                <img src="assets/images/deltable.png" alt="uptable">
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">04</th>
+                                            <td>Judith H. Richards</td>
+                                            <td>10 Feb, 2023</td>
+                                            <td>
+                                                <img src="assets/images/uptable.png" alt="uptable">
+                                                <img src="assets/images/deltable.png" alt="uptable">
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                </div>
+                                <!-- Visitor List Table End -->
+                            </div>
+                            
+                        </div>
+
+                        <div class="col-12 col-lg-7 topproducts-wrapper">
+                            <div class="inner-topproducts bg-white rounded-full py-3 px-4">
+                                <h3 class="topproducts cards-head mt-2">Top Products</h3>
+                                <!-- Visitor List Table Start -->
+                                <div class="table-responsive">
+                                    <table class="table table-hover">
+                                        <thead>
+                                          <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">Name</th>
+                                            <th scope="col">Popularity</th>
+                                            <th scope="col">Sales</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <th scope="row">01</th>
+                                            <td>Home Decor Range</td>
+                                            <td>
+                                                <div class="progress">
+                                                    <div class="progress-bar bg-primary" role="progressbar" style="width: 45%" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span class="px-2 py-1 rounded bg-primary text-white">45%</span>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">02</th>
+                                            <td>Disney Princess Pink Bag 18'</td>
+                                            <td>
+                                                <div class="progress">
+                                                    <div class="progress-bar bg-success" role="progressbar" style="width: 29%" aria-valuenow="29" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span class="px-2 py-1 rounded bg-success text-white">29%</span>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">03</th>
+                                            <td>Bathroom Essentials</td>
+                                            <td>
+                                                <div class="progress">
+                                                    <div class="progress-bar bg-info" role="progressbar" style="width: 18%" aria-valuenow="18" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span class="px-2 py-1 rounded bg-info text-white">18%</span>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">04</th>
+                                            <td>Apple Smartwatches</td>
+                                            <td><div class="progress">
+                                                <div class="progress-bar bg-warning" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div></td>
+                                            <td>
+                                                <span class="px-2 py-1 rounded bg-warning text-white">25%</span>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                </div>
+                                <!-- Visitor List Table End -->
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+                <!-- Section 2 End -->
+
+                <!-- Section 3 Start -->
+                <div class="main-section3-wrapper py-3 px-3">
+                    <div class="row section-3 px-3 gy-3 gx-3">
+                        <div class="col-12 col-lg-6 mainproducts-wrapper bg-white rounded-full py-3 px-4">
+                            <h3 class="mainproducts cards-head mt-2">Main Products</h3>
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                  <button class="nav-link active rounded-0 py-2" id="product1-tab" data-bs-toggle="tab" data-bs-target="#product1" type="button" role="tab" aria-controls="product1" aria-selected="true">Product 1</button>
+                                </li>
+                                <li class="nav-item text-white" role="presentation">
+                                  <button class="nav-link py-2" id="product2-tab" data-bs-toggle="tab" data-bs-target="#product2" type="button" role="tab" aria-controls="product2" aria-selected="false">Product 2</button>
+                                </li>
+                            </ul>
+                            <div class="tab-content py-3" id="myTabContent">
+                                <div class="tab-pane active fade show bg-light" id="product1" role="tabpanel" aria-labelledby="product1-tab">
+                                    <div class="tab1-flex d-flex">
+                                        <img src="assets/images/tabsdummy.png" alt="dummy" class="dummy">
+                                    <div class="tabs-main-content px-2">
+                                        <p class="question">What is this Product 1??</p>
+                                        <p class="answer">
+                                            There are many variations of passages of Lorem Ipsum available, 
+                                            but the majority have suffered alteration in some form, by injected humour, 
+                                            or randomised words which don't look even slightly believable. If you are going to 
+                                            use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing 
+                                            hidden in the middle of text.
+                                        </p>
+                                        <button class="btn btn-sm text-white py-1" style="background-color: var(--themeblue);">Read More</button>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade bg-light" id="product2" role="tabpanel" aria-labelledby="product2-tab">
+                                    <div class="tab2-flex d-flex">
+                                        <img src="assets/images/tabsdummy.png" alt="dummy" class="dummy">
+                                    <div class="tabs-main-content px-2">
+                                        <p class="question">What is this Product 2??</p>
+                                        <p class="answer">
+                                            There are many variations of passages of Lorem Ipsum available, 
+                                            but the majority have suffered alteration in some form, by injected humour, 
+                                            or randomised words which don't look even slightly believable. If you are going to 
+                                            use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing 
+                                            hidden in the middle of text.
+                                        </p>
+                                        <button class="btn btn-sm text-white py-1" style="background-color: var(--themeblue);">Read More</button>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-3 col-md-6 map-wrapper">
+                            <div class="inner-map bg-white rounded-full py-3 px-4 d-flex flex-column justify-content-between">
+                                <h3 class="map cards-head mt-2 mb-4">Sales Mapping By Country</h3>
+                                <img src="assets/images/map.png" class="my-auto img-fluid" alt="maps">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 vvs-wrapper">
+                            <div class="inner-vservices  bg-white rounded-full py-3 px-4">
+                                <h3 class="map cards-head mt-2 mb-4">Volume vs Service Level</h3>
+                                <div class="vertical d-flex py-4 justify-content-around align-items-end">
+                                    <div class="v v1 d-flex align-items-end">
+                                        <div class="main-v rounded-full">
+    
+                                        </div>
+                                    </div>
+                                    <div class="v v2 d-flex align-items-end">
+                                        <div class="main-v rounded-full">
+                                        </div>
+                                    </div>
+                                    <div class="v v3 d-flex align-items-end">
+                                        <div class="main-v rounded-full">
+                                        </div>
+                                    </div>
+                                    <div class="v v4 d-flex align-items-end">
+                                        <div class="main-v rounded-full">
+                                        </div>
+                                    </div>
+                                    <div class="v v5 d-flex align-items-end">
+                                        <div class="main-v rounded-full">
+                                        </div>
+                                    </div>
+                                    <div class="v v6 d-flex align-items-end">
+                                        <div class="main-v rounded-full">
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="vservices mt-4">
+                                    <img src="assets/images/vservices.PNG" alt="vservices" class="d-inline vservices-img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Section 3 End -->
+            </div>
+                <!-- Main Cards Wrapper End -->
+
+            <!-- Right Column Content End -->
+        </div>
+    </div>
+
+
+    <!-- External Js -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- icons -->
+    <script src="https://kit.fontawesome.com/0b9c778f9e.js" crossorigin="anonymous"></script>
+</body>
+</html>

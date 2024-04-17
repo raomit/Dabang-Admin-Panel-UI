@@ -1,0 +1,847 @@
+:root{
+    --bs-blue: #0F3659;
+    --darkblue: #151D48;
+    --fadeblue: #425166;
+    --themeblue: #5D5FEF;
+    --lightgrey: #96A5B8;
+}
+
+*{
+    font-family: 'Poppins';
+}
+
+body{
+    background: linear-gradient(0deg, #F9FAFB, #F9FAFB), linear-gradient(0deg, #F6F6F6, #F6F6F6);
+    overflow-x: hidden;
+}
+
+div.main-column-wrapper{
+    flex-wrap: nowrap;
+}
+
+.rounded-full{
+    border-radius: 1rem;
+}
+
+table th, tr, td{
+    cursor: pointer !important;
+}
+
+
+div.sidebar-nav{
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 18rem;
+    min-width: 18rem;
+    transition: all 0.1s ease-in-out;
+}
+
+
+
+img.purple-logo{
+    width: 3rem;
+    height: auto;
+}
+
+span.dabang-logo-text{
+    font-weight: 600;
+    color: #151D48;
+    font-size: 1.4rem;
+}
+
+.nav-link{
+    color: #737791;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+}
+
+img.icon-nav{
+    width: 1.7rem;
+}
+
+li.active{
+    background: #5D5FEF;
+}
+
+.border-radius{
+    border-radius: 1rem;
+}
+
+div.card-ad{
+    text-align: center !important;
+    background: #5D5FEF;
+}
+
+div.card-body{
+    z-index: 1;
+}
+
+button.btn-light{
+    color: #5D5FEF;
+    font-weight: 600;
+    width: 100%;
+    z-index: 200;
+}
+
+h5.card-title{
+    font-size: 1.20rem;
+}
+
+p.card-text{
+    font-weight: 500;
+    font-size: 0.7rem;
+}
+
+img.absolute-balls-bg-1{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+img.absolute-balls-bg-2{
+    position: absolute;
+    bottom: -10%;
+    left: -25%;
+    transform: rotate(180deg);
+    z-index: 0;
+}
+
+
+.clicked{
+    width: 6rem !important;
+    min-width: 6rem !important;
+}
+
+.expand-item{
+    display: none !important;
+}
+
+li.nav-item a{
+    border-radius: 1rem !important;
+}
+
+div.sidebar-nav li.nav-item:hover, div.sidebar-nav li.nav-item a:hover {
+    background-color: var(--themeblue) !important;
+    color: white !important;
+    border-radius: 1rem !important;
+}
+
+div.sidebar-nav a.card-link button:hover{
+    background-color: transparent !important;
+    border: 1px solid white !important;
+    color: white !important;
+}
+
+button.btn-export:hover{
+    background-color: var(--themeblue) !important;
+    color: white !important;
+    transition: all 0.2s ease-in-out;
+}
+
+
+/* imp */
+div.sidebar-nav a.nav-link, a.navbar-brand{
+    justify-content: center;
+}
+
+/* Sidebar Not Clicked State Styles */
+
+div.sidebar-nav{
+    padding: 2rem 1.4rem;
+}
+
+div.sidebar-nav:not(.clicked) a.nav-link,
+div.sidebar-nav:not(.clicked) a.navbar-brand{
+    justify-content: start !important;
+    align-items: center;
+}
+
+div.sidebar-nav:not(.clicked) .expand-item{
+    display: block !important;
+}
+
+div.card{
+    transition: all 0.2s !important;
+}
+
+/* Right Column Content */
+
+/* Search Input Styles -- Start */
+
+input.form-control{
+    background: #F9FAFB;
+    color: #737791;
+    border: none;
+    outline: none;
+    border-top-right-radius: 0.8rem;
+    border-bottom-right-radius: 0.8rem;
+}
+
+span.input-group-text{
+    background: #F9FAFB;
+    border: none;
+    outline: none;
+    border-top-left-radius: 0.8rem;
+    border-bottom-left-radius: 0.8rem;
+}
+
+h5.musfiq, h5.admin{
+    text-align: left;
+}
+
+div.right{
+    position: relative;
+}
+
+.dropdown-toggle::after{
+    display: none;
+}
+
+.dropdown-menu{
+    transform: translate3d(-145px, 40px, 0px) !important;
+}
+
+div.input-group{
+    flex-grow: 2;
+    flex-basis: 40%;
+}
+
+div.admin-area{
+    flex-grow: 1;
+}
+
+
+img.search{
+    width: 80%;
+}
+
+img.notify{
+    width: 90%;
+    height: 90%;
+}
+
+img.profile{
+    width: 20%;
+    height: 20%;
+}
+
+h5.musfiq{
+    font-size: 1.0rem;
+    color: #151D48;
+}
+
+h5.admin{
+    font-size: 0.9rem;
+    color: var(--lightgrey);
+    font-weight: 300;
+}
+
+i.fa-chevron-down{
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+
+/* Search Input Styles -- End */
+
+/* Todays Sales Card Start */
+
+.card{
+    text-align: left;
+    border: none;
+}
+
+.card-1 .card-body{ background: #FFE2E5; }
+.card-2 .card-body{ background: #FFF4DE; }
+.card-3 .card-body{ background: #DCFCE7; }
+.card-4 .card-body{ background: #F3E8FF; }
+
+
+button.btn-export{
+    color: var(--bs-blue);
+    font-size: 0.8rem;
+    border: 1.5px solid #C3D3E2;
+}
+
+h6.card-subtitle{
+    color: var(--darkblue) !important;
+}
+
+h5.card-text{
+    color: var(--fadeblue);
+}
+
+
+div.inner-sales{
+    height: 100%;
+}
+
+/* Todays Sales Card Start */
+
+div.sales-cards{
+    max-width: 100%;
+}
+
+h3.cards-head{
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: #05004E;
+}
+
+h4.summary{
+    font-weight: 400;
+    font-size: 1rem;
+    color: #737791;
+}
+
+button.btn-export{
+    font-size: 1rem;
+    border: 1.5px solid #C3D3E2;
+}
+
+h6.card-subtitle{
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+h5.card-text{
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+p.compare-text{
+    font-size: 0.9rem;
+}
+
+/* Todays Sales Card End */
+
+/* Todays Sales Card End */
+
+/* Insights Start */
+
+h2.accordion-header button{
+    background-color: var(--themeblue) !important;
+}
+
+.accordion-button::after{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
+}
+
+/* Insights End */
+
+/* Visitor List Start */
+
+table{
+    max-width: 100%;
+    overflow-x: auto !important;
+    color: var(--bs-blue) !important;
+    font-size: 0.8rem !important;
+    vertical-align: middle !important;
+}
+
+
+table th{
+    color: var(--lightgrey) !important;
+    font-weight: 400 !important;
+}
+/* Visitor List End */
+
+/* Top Products Start */
+
+div.progress{
+    height: 0.4rem !important;
+}
+
+/* Top PRoducts End */
+
+/* Main Products Start */
+
+.active{
+    background-color: var(--themeblue) !important;
+    color: white !important;
+}
+
+img.dummy{
+    height: 40%;
+}
+
+p.question{
+    color: black;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+p.answer{
+    color: #828282;
+    font-weight: 400;
+    font-size: 0.8rem;
+}
+
+.tab-pane{
+    background-color: white !important;
+}
+
+/* Main Products End */
+
+/* Sales Mapping Start */
+
+div.inner-map{
+    height: 100%;
+}
+
+/* Sales Mapping End */
+
+/* Volume Start */
+
+div.vertical{
+    height: 10rem;
+    border-bottom: 1px solid var(--lightgrey);
+}
+
+div.v{
+    height: 100%;
+    width: 1.0rem;
+    background-color: #5D5FEF;
+    border-radius: 1rem;
+}
+
+div.v1{
+    height: 80%;
+}
+
+.v1 div.main-v{
+    background-color: #00E096;
+    width: 100%;
+    height: 55%;
+}
+
+
+div.v3{
+    height: 70%;
+}
+
+.v2 div.main-v{
+    background-color: #00E096;
+    width: 100%;
+    height: 90%;
+}
+
+.v3 div.main-v{
+    background-color: #00E096;
+    width: 100%;
+    height: 40%;
+}
+
+div.v4{
+    height: 60%;
+}
+
+.v4 div.main-v{
+    background-color: #00E096;
+    width: 100%;
+    height: 60%;
+}
+
+div.v5{
+    height: 50%;
+}
+
+.v5 div.main-v{
+    background-color: #00E096;
+    width: 100%;
+    height: 20%;
+}
+
+div.v6{
+    height: 55%;
+}
+
+.v6 div.main-v{
+    background-color: #00E096;
+    width: 100%;
+    height: 30%;
+}
+
+div.vservices{
+    text-align: center;
+    vertical-align: middle;
+}
+
+img.vservices-img{
+    width: 75%;
+}
+
+/* Volume End */
+
+div.tooltip{
+    display: none;
+}
+
+
+/* ----------------------------------- */
+/* Mobile L Styles */
+/* ----------------------------------- */
+@media only screen and (max-width: 425px) {
+
+    div.right-column-content{
+        min-width: calc(100vw - 5.5rem) !important;
+    }
+    
+    /* Sidebar Styles Start */
+    .clicked{
+        width: 5.5rem !important;
+        min-width: 5.5rem !important;
+    }
+
+    div.sidebar-nav:not(.clicked) {
+      display: none;
+    }
+
+    .fa-bars{
+        font-size: 1.4rem;
+        display: block !important;
+    }
+    /* Sidebar Styles End */
+
+/* Search Input, Admin, Notify Styles -- Start */
+
+    div.input-group{
+        flex-grow: 2;
+        flex-basis: 40%;
+    }
+
+    div.admin-area{
+        flex-grow: 2;
+    }
+
+
+    img.search{
+        width: 80%;
+    }
+
+    div.notification-icon, div.admin-area{
+        text-align: center;
+    }
+
+    img.notify{
+        width: 70%;
+        height: 70%;
+    }
+
+    img.profile{
+        width: 25%;
+        height: 25%;
+    }
+
+    h5.musfiq{
+        font-size: 0.9rem;
+    }
+
+    h5.admin{
+        font-size: 0.7rem;
+    }
+
+    i.fa-chevron-down{
+        font-size: 0.9rem;
+    }
+
+/* Search Input, Admin, Notify Styles -- End */
+
+/* Todays Sales Card Start */
+
+div.sales-cards{
+    max-width: 100%;
+}
+
+h3.cards-head{
+    font-weight: 600;
+    font-size: 1rem;
+    color: #05004E;
+}
+
+h4.summary{
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: #737791;
+}
+
+button.btn-export{
+    font-size: 0.8rem;
+    border: 1.5px solid #C3D3E2;
+}
+
+h6.card-subtitle{
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+h5.card-text{
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+p.compare-text{
+    font-size: 0.9rem;
+}
+
+/* Todays Sales Card End */
+
+}
+
+
+
+
+
+/* ----------------------------------- */
+/* Tablet Styles  <= 768 px bs md start*/
+/* ----------------------------------- */
+@media only screen and (max-width: 768px) {
+
+    /* tooltip start */
+
+    div.tooltip{
+        display: inline-block !important;
+    }
+
+    div.tooltip-inner, div.tooltip-arrow::before, div.tooltip-arrow{
+        background-color: var(--themeblue) !important;
+        border-right-color: var(--themeblue) !important;
+        border-top-color: var(--themeblue) !important;
+    }
+    /* tooltip end */
+
+    div.right-column-content{
+        min-width: calc(100vw - 5.5rem) !important;
+    }
+    
+    /* Sidebar Styles Start */
+    .clicked{
+        width: 5.5rem !important;
+        min-width: 5.5rem !important;
+    }
+
+    div.sidebar-nav:not(.clicked) {
+      display: none;
+    }
+
+    .fa-bars{
+        font-size: 1.4rem;
+        display: block !important;
+    }
+    /* Sidebar Styles End */
+
+/* Search Input, Admin, Notify Styles -- Start */
+
+    div.input-group{
+        flex-grow: 2;
+        flex-basis: 40%;
+    }
+
+    div.admin-area{
+        flex-grow: 2;
+    }
+
+
+    img.search{
+        width: 80%;
+    }
+
+    div.notification-icon, div.admin-area{
+        text-align: center;
+    }
+
+    img.notify{
+        width: 75%;
+        height: 75%;
+    }
+
+    img.profile{
+        width: 20%;
+        height: 20%;
+    }
+
+    h5.musfiq{
+        font-size: 0.9rem;
+    }
+
+    h5.admin{
+        font-size: 0.7rem;
+    }
+
+    i.fa-chevron-down{
+        font-size: 0.9rem;
+    }
+
+/* Search Input, Admin, Notify Styles -- End */
+
+/* Todays Sales Card Start */
+
+div.sales-cards{
+    max-width: 100%;
+}
+
+h3.cards-head{
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: #05004E;
+}
+
+h4.summary{
+    font-weight: 400;
+    font-size: 1rem;
+    color: #737791;
+}
+
+button.btn-export{
+    font-size: 0.8rem;
+    border: 1.5px solid #C3D3E2;
+}
+
+h6.card-subtitle{
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+h5.card-text{
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+p.compare-text{
+    font-size: 0.9rem;
+}
+
+
+/* Todays Sales Card End */
+
+}
+
+/* Tablet Styles  <= 768 px bs md end */
+
+
+
+
+
+
+/* ----------------------------------- */
+/* Tablet Styles  <= 992 px bs md start*/
+/* ----------------------------------- */
+@media only screen and (max-width: 1300px) {
+
+    div.right-column-content{
+        min-width: calc(100vw - 5.5rem) !important;
+    }
+    
+    /* Sidebar Styles Start */
+    .clicked{
+        width: 5.5rem !important;
+        min-width: 5.5rem !important;
+    }
+
+    div.sidebar-nav:not(.clicked) {
+      display: none;
+    }
+
+    .fa-bars{
+        font-size: 1.4rem;
+        display: block !important;
+    }
+    /* Sidebar Styles End */
+
+/* Search Input, Admin, Notify Styles -- Start */
+
+    div.input-group{
+        flex-grow: 2;
+        flex-basis: 40%;
+    }
+
+    div.admin-area{
+        flex-grow: 2;
+    }
+
+
+    img.search{
+        width: 80%;
+    }
+
+    div.notification-icon, div.admin-area{
+        text-align: center;
+    }
+
+    img.notify{
+        width: 75%;
+        height: 75%;
+    }
+
+    img.profile{
+        width: 20%;
+        height: 20%;
+    }
+
+    h5.musfiq{
+        font-size: 1.1rem;
+    }
+
+    h5.admin{
+        font-size: 0.9rem;
+    }
+
+    i.fa-chevron-down{
+        font-size: 0.9rem;
+    }
+
+/* Search Input, Admin, Notify Styles -- End */
+
+/* Todays Sales Card Start */
+
+div.sales-cards{
+    max-width: 100%;
+}
+
+h3.cards-head{
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: #05004E;
+}
+
+h4.summary{
+    font-weight: 400;
+    font-size: 1rem;
+    color: #737791;
+}
+
+button.btn-export{
+    font-size: 0.8rem;
+    border: 1.5px solid #C3D3E2;
+}
+
+h6.card-subtitle{
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+h5.card-text{
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+p.compare-text{
+    font-size: 0.9rem;
+}
+
+/* Todays Sales Card End */
+
+/* vservices start */
+
+img.vservices-img{
+    width: 60%;
+}
+
+/* vservices end */
+
+}
+
+/* Tablet Styles  <= 992 px bs md end */
